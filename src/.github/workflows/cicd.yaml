@@ -14,4 +14,4 @@ jobs:
         run: ls -la
 
       - name: end step
-        run: echo "This is the end of job 1"
+        run: DONE
