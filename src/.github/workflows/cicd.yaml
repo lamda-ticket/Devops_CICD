@@ -5,10 +5,13 @@ on:
 jobs:
   job1:
     runs-on: ubuntu-latest
+
     steps:
       - name: step 1
         run: echo START
+
       - name: checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4   # ✔️ version valide
       - name: list_elements
-        run: ls -a -l
+        run: ls -al
+      - name: step 2
