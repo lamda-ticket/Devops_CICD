@@ -5,7 +5,6 @@ on:
 jobs:
   jobs1:
     runs-on: ubuntu-latest
-
     steps:
     -name: Cstep 1
      run: echo "This is step 1 of job 1"
