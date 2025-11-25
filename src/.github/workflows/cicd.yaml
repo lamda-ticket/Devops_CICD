@@ -5,17 +5,19 @@ on:
 jobs:
   jobs1:
     runs-on: ubuntu-latest
+
     steps:
-    # Ligne 10 corrigée : Espace après le tiret
-    - name: Cstep 1
-      # Ligne 11 corrigée : Indentation de deux espaces pour 'run'
-      run: echo "This is step 1 of job 1"
-    
-    # Les autres étapes doivent suivre la même structure
-    - name: Checkout code
-      uses: actions/checkout@v6
-    - name: list files
-      run: ls -la
-    - name: end step
-      run: echo "This is the end of job 1"
-      
+      # Ligne 10 corrigée : Espace après le tiret
+      - name: Cstep 1
+        # Ligne 11 corrigée : Indentation correcte
+        run: echo "This is step 1 of job 1"
+
+      # Les autres étapes doivent suivre la même structure
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: list files
+        run: ls -la
+
+      - name: end step
+        run: echo "This is the end of job 1"
