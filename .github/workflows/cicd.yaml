@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    -name: Cstep 1
-     run: echo "This is step 1 of job 1"
-    - name: Checkout code
-      uses: actions/checkout@v6
-    - name: list files
-      run: ls -la
-    - name: end step
-      run: echo Done
+    -  name: Cstep 1
+       run: echo "This is step 1 of job 1"
+    -  name: Checkout code
+       uses: actions/checkout@v6
+    -  name: list files
+       run: ls -la
+    -  name: end step
+       run: echo Done
       
       
