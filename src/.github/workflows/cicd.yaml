@@ -1,17 +1,20 @@
-on: 
+on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
-  job1:
+  jobs1:
     runs-on: ubuntu-latest
 
     steps:
-      - name: step 1
-        run: echo START
+      - name: Cstep 1
+        run: echo "This is step 1 of job 1"
 
-      - name: checkout
-        uses: actions/checkout@v4   # ✔️ version valide
-      - name: list_elements
-        run: ls -al
-      - name: step 2
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: list files
+        run: ls -la
+
+      - name: end step
+        run: echo "This is the end of job 1"
